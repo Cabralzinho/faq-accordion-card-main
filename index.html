@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+
+<body class="h-screen bg-violet-500 desktop:bg-violet-900 px-4">
+  <main class="h-full flex flex-col justify-center items-center desktop:flex-row">
+    <div
+      class="bg-slate-100 max-w-[1200px] max-h-[80%] min-h-[300px] w-full relative desktop:pt-0 flex flex-col desktop:flex-row desktop:justify-center items-center text-center rounded-2xl gap-6 p-4">
+      <div class="absolute flex flex-col justify-center items-center w-48 desktop:w-72 desktop:h-72 desktop:relative">
+        <img class="absolute desktop:top-40 w-full h-auto" src="./assets/images/bg-pattern-mobile.svg" alt="">
+        <img class="absolute w-full h-auto" src="./assets/images/illustration-woman-online-mobile.svg" alt="">
+      </div>
+      <div class="mt-24 h-full w-full flex flex-col min-h-0">
+        <h2>FAQ</h2>
+        <ul class="flex flex-col divide-y-2 divide-gray-200 accordion-list overflow-y-auto h-full max-h-full p-4">
+          <li class="accordion flex-col py-5 cursor-pointer hidden">
+            <div class="flex items-center justify-between w-full">
+              <h6
+                class="text-xs desktop:text-sm text-left text-gray-900 select-none transition-colors hover:text-orange-400">
+                ${title}</h6>
+              <img style="transition: all .5s" class="select-none" src="./assets/images/icon-arrow-down.svg" alt="">
+            </div>
+            <div class="paragraph grid transition-1s " style="grid-template-rows: 0fr">
+              <p class="overflow-hidden text-gray-500 text-xs text-left desktop:text-sm">
+                ${description}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- 
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> 
+  -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
