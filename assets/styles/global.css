@@ -57,3 +57,7 @@ h6 {
 .arrow-up {
     rotate: calc(180deg);
 }
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
